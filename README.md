@@ -13,6 +13,7 @@ could be start correctly, it includes but not limits to below:
 2. ensure required file directories created
 3. ensure CNI configurations created
 4. ensure openvswitch services are listening
+5. data migrations
 
 This container is aim to run before netplugin/netmaster container (e.g. k8s initContainer),
 to ensure required conditions are met
