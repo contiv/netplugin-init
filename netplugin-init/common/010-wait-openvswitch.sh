@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -uex
 
+exit 0
+
 retry=60
 interval=1
 
