@@ -13,9 +13,9 @@ sed -i s/__KUBERNETES_SERVICE_HOST__/${KUBERNETES_SERVICE_HOST}/g $TMP_DEST
 sed -i s/__KUBERNETES_SERVICE_PORT__/${KUBERNETES_SERVICE_PORT}/g $TMP_DEST
 
 echo "INFO: Got K8S configs"
-cat $TMP_CONF
+cat $TMP_DEST
 
 # put token after print out the contains
 sed -i s/__SERVICEACCOUNT_TOKEN__/${SERVICEACCOUNT_TOKEN:-}/g $TMP_DEST
 
-mv $TMP_CONF $K8S_DEST
+mv $TMP_DEST $K8S_DEST
